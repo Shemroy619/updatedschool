@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Night 2025 - Free Tickets Available!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-masks-theater"></i> Carnival Night 2025</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#tickets">Free Tickets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">🎭 CARNIVAL NIGHT 2025 🎭</h1>
+            <p class="hero-subtitle">The Most Spectacular Event of the Year</p>
+            <div class="event-date">
+                <i class="fas fa-calendar"></i>
+                <span>DECEMBER 31ST, 2025 | 8:00 PM</span>
+            </div>
+            <div class="urgency-banner">
+                <span class="blink">🔥 LIMITED FREE TICKETS AVAILABLE! 🔥</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="carnival-lights"></div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="section-title">Featured Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-banner">
+                        <h3>🎪 MAIN STAGE</h3>
+                        <p>Live Performances</p>
+                    </div>
+                    <div class="event-details">
+                        <p><i class="fas fa-clock"></i> 8:00 PM - 2:00 AM</p>
+                        <p><i class="fas fa-location-dot"></i> Central Arena</p>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-banner premium">
+                        <h3>🎭 VIP EXPERIENCE</h3>
+                        <p>Exclusive Access</p>
+                    </div>
+                    <div class="event-details">
+                        <p><i class="fas fa-clock"></i> 7:00 PM - 3:00 AM</p>
+                        <p><i class="fas fa-location-dot"></i> VIP Lounge</p>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-banner">
+                        <h3>🎨 ART ZONE</h3>
+                        <p>Interactive Exhibits</p>
+                    </div>
+                    <div class="event-details">
+                        <p><i class="fas fa-clock"></i> 6:00 PM - 12:00 AM</p>
+                        <p><i class="fas fa-location-dot"></i> Exhibition Hall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Tickets Section -->
+    <section id="tickets" class="tickets-section">
+        <div class="container">
+            <h2 class="section-title glow">🎟️ FREE TICKET GIVEAWAY! 🎟️</h2>
+            <div class="urgency-container">
+                <div class="countdown-timer">
+                    <div class="timer-item">
+                        <span class="timer-number" id="hours">12</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="minutes">34</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="seconds">56</span>
+                        <span class="timer-label">Seconds</span>
+                    </div>
+                </div>
+                <p class="urgency-text">⚡ Only 23 FREE tickets remaining! ⚡</p>
+            </div>
+            
+            <div class="ticket-offer">
+                <h3>🎉 Special New Year's Promotion! 🎉</h3>
+                <div class="offer-details">
+                    <div class="price-comparison">
+                        <span class="original-price">Regular Price: $299</span>
+                        <span class="free-price">Your Price: FREE!</span>
+                    </div>
+                    <ul class="benefits">
+                        <li><i class="fas fa-check"></i> Full Event Access</li>
+                        <li><i class="fas fa-check"></i> Free Food & Drinks</li>
+                        <li><i class="fas fa-check"></i> VIP Parking</li>
+                        <li><i class="fas fa-check"></i> Exclusive Merchandise</li>
+                    </ul>
+                </div>
+                
+                <button class="claim-ticket-btn" id="claimTicketBtn">
+                    <span class="btn-text">🎫 CLAIM YOUR FREE TICKET NOW! 🎫</span>
+                    <div class="btn-sparkles"></div>
+                </button>
+                
+                <p class="terms-text">
+                    <small>* Limited time offer. Terms and conditions apply. Must be 18+ to participate.</small>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treasure Box Game (Hidden initially) -->
+    <section id="treasureGame" class="treasure-game hidden">
+        <div class="game-container">
+            <h2 class="game-title">🏆 CONGRATULATIONS! 🏆</h2>
+            <p class="game-subtitle">Choose a treasure box to reveal your prize!</p>
+            <div class="treasure-boxes">
+                <div class="treasure-box" data-box="1">
+                    <div class="box-glow"></div>
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="treasure-box" data-box="2">
+                    <div class="box-glow"></div>
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="treasure-box" data-box="3">
+                    <div class="box-glow"></div>
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="treasure-box" data-box="4">
+                    <div class="box-glow"></div>
+                    <i class="fas fa-gift"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Upload Section (Hidden initially) -->
+    <section id="photoUpload" class="photo-upload hidden">
+        <div class="upload-container">
+            <div class="confetti"></div>
+            <h2 class="winner-title">🎊 WINNER! WINNER! 🎊</h2>
+            <p class="winner-subtitle">You've won a FREE VIP ticket worth $299!</p>
+            
+            <div class="verification-form">
+                <h3>📸 Security Verification Required</h3>
+                <p class="verification-text">
+                    For security purposes and to prevent fraud, please upload a photo for identity verification. 
+                    This helps us ensure tickets go to real people, not bots!
+                </p>
+                
+                <div class="upload-options">
+                    <button class="upload-btn camera-btn" id="cameraBtn">
+                        <i class="fas fa-camera"></i>
+                        Take Photo
+                    </button>
+                    <button class="upload-btn file-btn" id="fileBtn">
+                        <i class="fas fa-upload"></i>
+                        Upload File
+                    </button>
+                </div>
+                
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                
+                <div class="upload-progress hidden" id="uploadProgress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p class="progress-text">Processing your verification...</p>
+                </div>
+                
+                <div class="uploaded-image hidden" id="uploadedImage">
+                    <img id="previewImage" alt="Uploaded photo">
+                    <button class="confirm-btn" id="confirmBtn">✅ Confirm & Get Ticket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pac-Man Animation Section (Hidden initially) -->
+    <section id="pacmanSection" class="pacman-section hidden">
+        <div class="pacman-container">
+            <div class="pacman" id="pacman">
+                <div class="pacman-mouth"></div>
+            </div>
+            <div class="power-pellets" id="powerPellets"></div>
+        </div>
+    </section>
+
+    <!-- Hack Simulation Section (Hidden initially) -->
+    <section id="hackSimulation" class="hack-simulation hidden">
+        <div class="matrix-bg" id="matrixBg"></div>
+        <div class="hack-content">
+            <h1 class="hack-title glitch" id="hackTitle">YOU HAVE BEEN HACKED</h1>
+            <div class="terminal" id="terminal">
+                <div class="terminal-line">Accessing personal data...</div>
+                <div class="terminal-line">Downloading files...</div>
+                <div class="terminal-line">Stealing identity...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Reveal Section (Hidden initially) -->
+    <section id="educationalReveal" class="educational-reveal hidden">
+        <div class="edu-container">
+            <h1 class="reveal-title">😅 RELAX - This was just a demonstration! 😅</h1>
+            
+            <div class="explanation">
+                <h2>🎯 What Just Happened?</h2>
+                <p>You just experienced a simulated cyber attack! This website was designed to teach you about online safety by showing you exactly how scammers operate.</p>
+            </div>
+            
+            <div class="red-flags">
+                <h2>🚩 Red Flags You Should Have Noticed:</h2>
+                <div class="flags-grid">
+                    <div class="flag-item">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Too Good to Be True</h4>
+                        <p>Free $299 tickets with no catch? Always suspicious!</p>
+                    </div>
+                    <div class="flag-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Urgency Tactics</h4>
+                        <p>Countdown timers and "limited time" create pressure to act quickly</p>
+                    </div>
+                    <div class="flag-item">
+                        <i class="fas fa-camera"></i>
+                        <h4>Unnecessary Photo Request</h4>
+                        <p>Why would a ticket site need your photo for "verification"?</p>
+                    </div>
+                    <div class="flag-item">
+                        <i class="fas fa-user-secret"></i>
+                        <h4>Unknown Website</h4>
+                        <p>Always verify the legitimacy of websites before sharing personal info</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="safety-tips">
+                <h2>🛡️ How to Stay Safe Online:</h2>
+                <ul>
+                    <li><strong>Verify before you trust:</strong> Check website authenticity and reviews</li>
+                    <li><strong>Be skeptical of free offers:</strong> If it seems too good to be true, it probably is</li>
+                    <li><strong>Don't rush:</strong> Scammers use urgency to prevent you from thinking clearly</li>
+                    <li><strong>Protect personal data:</strong> Never upload photos or personal info to suspicious sites</li>
+                    <li><strong>Trust your instincts:</strong> If something feels wrong, it probably is</li>
+                </ul>
+            </div>
+            
+            <div class="share-section">
+                <h3>📢 Share This Experience</h3>
+                <p>Help others learn by sharing this cybersecurity demonstration!</p>
+                <div class="share-buttons">
+                    <button class="share-btn twitter" onclick="shareExperience('twitter')">
+                        <i class="fab fa-twitter"></i> Share on Twitter
+                    </button>
+                    <button class="share-btn facebook" onclick="shareExperience('facebook')">
+                        <i class="fab fa-facebook"></i> Share on Facebook
+                    </button>
+                    <button class="share-btn linkedin" onclick="shareExperience('linkedin')">
+                        <i class="fab fa-linkedin"></i> Share on LinkedIn
+                    </button>
+                </div>
+            </div>
+            
+            <div class="restart-section">
+                <button class="restart-btn" onclick="location.reload()">
+                    <i class="fas fa-redo"></i> Try the Demo Again
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🎭 Carnival Night 2025</h3>
+                    <p>An educational cybersecurity awareness project</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#tickets">Tickets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Educational Resources</h4>
+                    <ul>
+                        <li><a href="https://staysafeonline.org/" target="_blank">Stay Safe Online</a></li>
+                        <li><a href="https://www.cisa.gov/" target="_blank">CISA Cybersecurity</a></li>
+                        <li><a href="https://www.consumer.ftc.gov/topics/online-security" target="_blank">FTC Online Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cybersecurity Education Project. Created for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Elements -->
+    <audio id="clickSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+P0xWA5BzmO1e6+YSMFLITj8NSMOQs" type="audio/wav">
+    </audio>
+    <audio id="pacmanSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+P0xWA5BzmO1e6+YSMFLITj8NSMOQs" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
